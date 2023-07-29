@@ -1,0 +1,3 @@
+{
+  "Kill Brick" = "--Put This In The Part You Want To Make Deadly. (Not Model!)\n\nscript.Parent.Touched:Connect(function(touchingpart) -- [I: Fires when touched, sets 'touchingpart' variable as the touching part]\n  if touchingpart.Parent:FindFirstChild('Humanoid') then -- [I: Checks if part's parent has a humanoid, confirming it is a player.]\n    touchingpart.Parent.Humanoid.Health = 0 -- And we finally kill it by setting humanoid's health to 0.\n  end\nend)"
+}
